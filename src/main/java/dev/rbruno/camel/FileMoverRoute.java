@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 public class FileMoverRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
-from("file:///tmp/camel").
-        log("${headers}").
-        log("${body}").
-        to("file:///tmp/camel/processed");
+        from("file:///tmp/camel").
+                log("${headers}").
+                log("${body}").
+                to("file:///tmp/camel/processed");
     }
 }

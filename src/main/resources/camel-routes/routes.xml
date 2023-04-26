@@ -3,6 +3,6 @@
         <from uri="file:///tmp/camel/xml"/>
         <log message="${headers}"/>
         <log message="${body}"/>
-        <to uri="file:///tmp/camel/xml/processed" />
+        <to uri="file:///tmp/camel/xml/processed"/>
     </route>
 </routes>
